@@ -1,4 +1,4 @@
-import src.Diario;
+
 
 public class Missao{
     String nome;
@@ -6,19 +6,16 @@ public class Missao{
     int codigo;
     boolean status;
 
-
-    public void criarmissao(String nome, String descricao, int codigo){
+//construtor
+    public Missao(String nome, String descricao, int codigo, boolean status){ 
         this.nome=nome;
         this.descricao=descricao;
         this.codigo=codigo;
         this.status=false;
     }
-    public void completarmissão(int codigo){
-        this.codigo=codigo;
-        this.status=true;
-    }
+    
     public String getInfo() {
-        return "Missão: " + nome + "\nDescrição: " + descricao + "Codigo:" + codigo+
+        return "Missão: " + nome + "\nDescrição: " + descricao + "\nCodigo:" + codigo+
                "\nStatus: " + (status ? "Concluída" : "Em andamento") + "\n";
     }
 }
