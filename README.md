@@ -1,1 +1,1 @@
-# AdventureDiary
+# Adventure Diary
